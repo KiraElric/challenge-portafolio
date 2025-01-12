@@ -15,16 +15,18 @@
 <body>
     <!-- Menú -->
     <header class="cabecera">
-        <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
-        <h1 class="cabecera__titulo">Alura Latam</h1>
+        <div class="cabecera__contenedor">
+            <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
+            <h1 class="cabecera__titulo">Lissette Urso</h1>
+        </div>
         <nav class="navegacion">
             <ul class="navegacion__lista">
                 <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
-                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
-                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
+                <li class="navegacion__elemento"><a href="#habilidades">Skills</a></li>
+                <li class="navegacion__elemento"><a href="#aficiones">Hobbies</a></li>
                 <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
                 <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
-                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
+                <li class="navegacion__elemento"><a href="#contacto">contacto@fulana.com</a></li>
             </ul>
         </nav>
     </header>
@@ -58,7 +60,7 @@
         <h2 class="habilidades__titulo">Habilidades</h2>
         <ul class="habilidades__lista">
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/html.png" alt="HTML">
+                <img class="habilidades__icono" src="assets/htlm.png" alt="HTML">
                 <p class="habilidades__nombre">HTML 5</p>
             </li>
             <li class="habilidades__elemento">
@@ -147,25 +149,75 @@
     <section class="proyectos" id="proyectos">
         <h2 class="proyectos__titulo">Experiencia Profesional</h2>
         <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+            <img class="proyecto__imagen" src="assets/decod_print.png" alt="imagen proyecto encriptador de texto">
+            <div class="proyecto__contenedor__texto">
+                <h3 class="proyectos__nombre">Encriptador de Texto</h3>
+                <p class="proyectos__descripcion">Challenge Oracle</p>
+                <div class="proyecto__botones">
+                    <button class="proyecto__boton proyecto__boton__repo" >Repositorio</button>
+                    <button class="proyecto__boton proyecto__boton__demo" >Ver Demo</button>
+                </div>
+            </div>
         </div>
         <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+            <img class="proyecto__imagen" src="assets/forca_print.png" alt="imagen proyecto encriptador de texto">
+            <div class="proyecto__contenedor__texto">
+                <h3 class="proyectos__nombre">Juego creado con HTML y JavaScript</h3>
+                <p class="proyectos__descripcion">Challenge Oracle</p>
+                <div class="proyecto__botones">
+                    <button class="proyecto__boton proyecto__boton__repo" >Repositorio</button>
+                    <button class="proyecto__boton proyecto__boton__demo" >Ver Demo</button>
+                </div>
+            </div>
+        </div>
+        <div class="proyectos__contenedor">
+            <img class="proyecto__imagen" src="assets/secretcode_print.png" alt="imagen proyecto encriptador de texto">
+            <div class="proyecto__contenedor__texto">
+                <h3 class="proyectos__nombre">Encriptador de Texto</h3>
+                <p class="proyectos__descripcion">Challenge Oracle</p>
+                <div class="proyecto__botones">
+                    <button class="proyecto__boton proyecto__boton__repo" >Repositorio</button>
+                    <button class="proyecto__boton proyecto__boton__demo" >Ver Demo</button>
+                </div>
+            </div>
+        </div>
+        <div class="proyectos__contenedor">
+            <img class="proyecto__imagen" src="assets/forca2_print.png" alt="imagen proyecto encriptador de texto">
+            <div class="proyecto__contenedor__texto">
+                <h3 class="proyectos__nombre">Juego creado con HTML y JavaScript</h3>
+                <p class="proyectos__descripcion">Challenge Oracle</p>
+                <div class="proyecto__botones">
+                    <button class="proyecto__boton proyecto__boton__repo" >Repositorio</button>
+                    <button class="proyecto__boton proyecto__boton__demo" >Ver Demo</button>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
-        <h2 class="contacto__titulo">Contacto</h2>
-        <form class="contacto__formulario">
-            <input class="contacto__campo" type="text" placeholder="Nombre">
-            <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
-            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
-            <button class="contacto__boton" type="submit">Enviar</button>
-        </form>
+        <img class="contacto__imagen" src="assets/contact_image.png" alt="imagen de contacto">
+        <div>
+            <div class="contacto__contenedor">
+                <h2 class="contacto__titulo">Contacto</h2>
+                <p class="contacto__parrafo__texto">¿Quieres contactarme?</p>
+                <p class="contacto__parrafo__texto">Complete el siguiente formulario y me pondre en contacto con usted lo antes posible.</p>
+            </div>
+            <form class="contacto__formulario">
+                <input class="contacto__campo" type="text" placeholder="Nombre">
+                <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
+                <input class="contacto__campo" type="asunto" placeholder="Asunto">
+                <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
+                <button class="contacto__boton" type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
     </section>
+
+    <footer class="footer">
+        <div class="footer__parrafo">
+            <p class="footer__parrafo_texto">Desarrollado por Lissette Urso 2025</p>
+        </div>
+    </footer>
 </body>
     <script src="script.js"></script>
 </html>
